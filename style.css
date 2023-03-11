@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -7,10 +7,42 @@
 body {
   font-family: "Roboto", sans-serif;
   display: flex; /*розміщення блоків-дітей в одному рядку*/
-  flex-direction: column; /*розміщення блоків-дітей в один під одним*/
   align-items: center; /*розміщення блоків-дітей посередині відносно боків*/
   justify-content: center; /*розміщення блоків-дітей посередині відносно низу та верху*/
   height: 100vh; /*надання розміри (висоти) для елемента body на 100% висоти сторінки браузера*/
-  overflow: hidden; /*приховує скрол-бар за замовчуванням*/
   margin: 0;
+  background-color: #2a8075;
+}
+
+.input {
+  height: 50px;
+  width: 0px;
+  font-size: 18px;
+  border: none;
+  padding: 0px;
+  background-color: white;
+  transition: width 0.3s ease;
+  transition: paddind 0.3s ease;
+}
+
+.input.active {
+  width: 200px;
+  padding: 10px;
+}
+
+.btn {
+  height: 50px;
+  width: 50px;
+  font-size: 18px;
+  border: none;
+  background-color: white;
+  margin-left: -4px;
+}
+
+.btn button:focus {
+  outline: none;
+}
+
+input:focus {
+  outline: none;
 }
